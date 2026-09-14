@@ -1,18 +1,19 @@
 .box{
-    width: 200px;
+    width: 300px;
     height: 150px;
     background-color: rgb(127, 60, 239);
     border-radius: 40px;
+    margin: 0 auto;
 }
 
 #text{
-    font-size: 20px;
+    font-size: 25px;
     color: rgb(170, 200, 200);
     text-align: center;
 }
 
 #text2{
-    font-size: 25px;
+    font-size: 20px;
     color: rgb(200, 200, 200);
     text-align: center;
 }
