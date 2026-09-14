@@ -8,7 +8,7 @@
 
 .box2{
     width: 800px;
-    background-color: rgb(95, 134, 151);
+    background-color: rgb(31, 146, 195);
     box-sizing: border-box;
     padding: 5px 10px;
     border-radius: 35px;
@@ -21,7 +21,7 @@
     background-color: rgb(70, 143, 109);
     margin: 20px auto; border-radius: 50px;
     box-sizing: border-box;
-    padding: 15px 15px;
+    padding: 5px 15px;
 }
 
 .box{
