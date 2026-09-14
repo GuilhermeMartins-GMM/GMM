@@ -2,7 +2,15 @@
     width: 800px;
     height: 150px;
     background-color: rgb(127, 60, 239);
-    border-radius: 40px;
+    border-radius: 30px;
+    margin: 0 auto;
+}
+
+.box2{
+    width: 800px;
+    height: 75px;
+    background-color: rgb(127, 60, 239);
+    border-radius: 30px;
     margin: 0 auto;
 }
 
