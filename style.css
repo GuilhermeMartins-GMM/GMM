@@ -19,9 +19,9 @@
 .box3{
     width: 150px; height: auto;
     background-color: rgb(70, 143, 109);
-    margin: 20px auto; border-radius: 50px;
+    margin: 20px auto; border-radius: 40px;
     box-sizing: border-box;
-    padding: 5px 15px;
+    padding: 2px 15px;
 }
 
 .box{
@@ -33,7 +33,7 @@
     height: auto;
 }
 
-#text, #text1{
+#text, #text1, #text2, #text3, #text4, #text5{
     color: rgb(250, 250, 250);
     text-align: center;
 }
@@ -46,10 +46,22 @@
     font-size: 20px;
 }
 
-#text2, #text3{
-    text-align: center;
+#text2, #text5{
+    font-size: 18px;
 }
 
-#text2{
-    font-size: 18px;
+.box4{
+    width: 150px; height: auto;
+    background-color:rgb(31, 146, 195);
+    margin: 20px auto; border-radius: 40px;
+    box-sizing: border-box;
+    padding: 2px 15px;
+}
+
+.box5{
+    width: 800px; height: auto;
+    background-color:rgb(70, 143, 109);
+    margin: 0 auto; border-radius: 35px;
+    box-sizing: border-box;
+    padding: 5px 10px;
 }
