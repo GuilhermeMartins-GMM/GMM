@@ -21,7 +21,7 @@
     background-color: rgb(70, 143, 109);
     margin: 20px auto; border-radius: 40px;
     box-sizing: border-box;
-    padding: 2px 15px;
+    padding: 1px 15px;
 }
 
 .box{
@@ -51,11 +51,11 @@
 }
 
 .box4{
-    width: 150px; height: auto;
+    width: 250px; height: auto;
     background-color:rgb(31, 146, 195);
     margin: 20px auto; border-radius: 40px;
     box-sizing: border-box;
-    padding: 2px 15px;
+    padding: 1px 15px;
 }
 
 .box5{
