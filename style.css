@@ -1,6 +1,6 @@
 .box{
     width: 800px;
-    height: 150px;
+    height: 120px;
     background-color: rgb(127, 60, 239);
     border-radius: 30px;
     margin: 0 auto;
@@ -8,15 +8,16 @@
 
 .box2{
     width: 800px;
-    height: 75px;
+    height: 80px;
     background-color: rgb(127, 60, 239);
     border-radius: 30px;
+    padding: 20px;
     margin: 0 auto;
 }
 
 #text{
     font-size: 25px;
-    color: rgb(170, 200, 200);
+    color: rgb(200, 200, 200);
     text-align: center;
 }
 
