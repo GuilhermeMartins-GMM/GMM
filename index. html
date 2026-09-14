@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Ma site</title>
+    <link rel="stylesheet" href="style. css">
+</head>
+    <body>
+        <div class="box" id="text">
+            <h1>Hii, welcome to my site</h1>
+            <p>I'm GMM, and I am learning with stardance hack club</p>
+        </div>
+        <section id="about">
+            <h2>About Me</h2>
+            <p>I am learning programming and chemistry for olympiads.</p>
+            <div class="box" id="text2">
+            <p>I'm a gold medalist in informatics, and bronze in chemistry (brazilian olympiads).<p>
+            </div>
+        </section>
+    </body>
+</html>
