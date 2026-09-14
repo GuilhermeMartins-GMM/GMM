@@ -1,5 +1,5 @@
 .box{
-    width: 300px;
+    width: 800px;
     height: 150px;
     background-color: rgb(127, 60, 239);
     border-radius: 40px;
@@ -15,5 +15,9 @@
 #text2{
     font-size: 20px;
     color: rgb(200, 200, 200);
+    text-align: center;
+}
+
+#text3{
     text-align: center;
 }
