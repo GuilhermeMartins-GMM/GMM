@@ -82,3 +82,17 @@ a{
     font-weight: bold;
     min-height: 25px;
 }
+
+.recircle{
+    width: 800px; height: auto;
+    box-sizing: border-box;
+    padding: 10px 10px;
+    border-radius: 35px;
+    margin: 0 auto;
+    background: linear-gradient(
+        45deg,
+        rgb(7, 141, 112),
+        rgb(255, 255, 255),
+        rgb(61, 26, 121),
+    );
+}
