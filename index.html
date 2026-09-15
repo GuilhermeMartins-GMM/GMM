@@ -55,10 +55,10 @@
             
         </section>
 
-        <section id="recomendations">
+        <section id="recommendations">
 
             <div class="box4" id="text4">
-                <h2>My Recomendations</h2>
+                <h2>My Recommendations</h2>
             </div>
 
             <div class="box5" id="text5">
@@ -68,10 +68,68 @@
                 way to master programming). To the problems, I have a recommendation: <a href="https://neps.academy" target="_blank">Neps Academy</a>.</p>
                 <p>If you are interested in general science, I really recommend doing
                 the Breakthrough Junior Challenge, it's an anual competition, and you can 
-                start prepearing to next year's right now.</p>
+                start preparing to next year's right now.</p>
             </div>
 
         </section>
+
+        <section id="guessgame">
+
+            <h2>Guess the Number</h2>
+            <p>The number is between 1 and 100.</p>
+
+            <input
+                type="number"
+                id="guess"
+                min="1"
+                max="100"
+                placeholder="Your guess">
+
+            <button onclick="check()">Guess</button>
+            <p id="result"></p>
+            <p id="attempts"></p>
+            <button onclick="newG()">New Game</button>
+
+        </section>
+
+        <script>
+
+            let number;
+            let attempts;
+
+            function newG(){
+                number = Math.floor(Math.random()*100)+1;
+                attempts=0;
+                document.getElementById("result").textContent = "";
+                document.getElementById("attempts").textContent = "";
+                document.getElementById("guess").value = "";
+            }
+
+            function check(){
+                let guess = Number(document.getElementById("guess").value);
+
+                if(guess<1 || guess>100){
+                    document.getElementById("result").textContent = "Between 1 and 100";
+                    return;
+                }
+
+                attempts++;
+
+                if(guess<number){
+                    document.getElementById("result").textContent = "Higher";
+                }
+                else if(guess>number){
+                    document.getElementById("result").textContent = "Lower";
+                }
+                else{
+                    document.getElementById("result").textContent = "Correct!!!";
+                    document.getElementById("attempts").textContent = "Attempts: " + attempts;
+                }
+            }
+
+            newG();
+
+        </script>
 
         <img src="foto.png" alt="" style="display: block; margin: 80px auto; border:none; outline: none; box-shadow: none;">  
     </body>

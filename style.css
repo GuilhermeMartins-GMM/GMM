@@ -65,3 +65,20 @@
 a{
     color: white;
 }
+
+#guessgame{
+    text-align: center;
+    margin: 80px auto;
+}
+
+#guessgame input{
+    width: 100px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+#result{
+    font-size: 20px;
+    font-weight: bold;
+    min-height: 25px;
+}
