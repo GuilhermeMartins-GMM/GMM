@@ -2,6 +2,18 @@
 body {
     background-color: rgb(230, 230, 230);
     font-family: Arial, sans-serif;
+    align-items: center;
+    justify-content: center;
+    overflow: x hidden;
+}
+
+.box, .box1, .box2, .box3, .box4, .box5, .recircle {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.box:hover, .box1:hover, .box2:hover, .box3:hover, .box4:hover, .box5:hover, .recircle:hover {
+    transform: translateY(-10px);
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.3);
 }
 
 .box, .box1{
@@ -64,6 +76,7 @@ body {
     width: min(800px, 100%); height: auto;
     background-color:rgb(70, 143, 109);
     margin: 0 auto; border-radius: 35px;
+    margin-bottom: 25px;
     box-sizing: border-box;
     padding: 25px 15px;
 }
@@ -103,6 +116,7 @@ a{
     width: min(800px, 100%); height: auto;
     box-sizing: border-box;
     padding: 10px 10px;
+    display: block;
     border-radius: 35px;
     text-align: center;
     margin: 0 auto;
