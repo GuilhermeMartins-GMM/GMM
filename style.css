@@ -32,10 +32,11 @@ body {
     border-radius: 35px;
     margin: 0 auto;
     height: auto;
+    margin-bottom: 35px;
 }
 
 .box3{
-    width: 350px; height: auto;
+    width: min(800px, 100%); height: auto;
     background-color: rgb(70, 143, 109);
     margin: 20px auto; border-radius: 40px;
     box-sizing: border-box;
@@ -65,7 +66,7 @@ body {
 }
 
 .box4{
-    width: 350px; height: auto;
+    width: min(800px, 100%); height: auto;
     background-color:rgb(31, 146, 195);
     margin: 20px auto; border-radius: 40px;
     box-sizing: border-box;
@@ -76,7 +77,6 @@ body {
     width: min(800px, 100%); height: auto;
     background-color:rgb(70, 143, 109);
     margin: 0 auto; border-radius: 35px;
-    margin-bottom: 25px;
     box-sizing: border-box;
     padding: 25px 15px;
 }
