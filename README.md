@@ -1,3 +1,3 @@
-# Ma-site
-My first site, with stardance hack club.
+# GMM
+Guilherme Martins de Magalhães website, made to stardance hack club.
 I used HTML and CSS.
