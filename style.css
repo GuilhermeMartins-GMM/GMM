@@ -1,6 +1,6 @@
 
 body {
-    background-color: rgb(200, 200, 200);
+    background-color: rgb(160, 160, 160);
 }
 
 .box, .box1{
@@ -69,6 +69,11 @@ body {
 
 a{
     color: white;
+}
+
+#guessgame button, #guessgame input{
+    box-sizing: border-box;
+    height: auto;
 }
 
 #guessgame button {
