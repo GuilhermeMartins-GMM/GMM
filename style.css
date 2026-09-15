@@ -1,6 +1,7 @@
 
 body {
-    background-color: rgb(160, 160, 160);
+    background-color: rgb(200, 200, 200);
+    font-family: Arial, sans-serif;
 }
 
 .box, .box1{
@@ -100,10 +101,12 @@ a{
 
 .recircle{
     width: min(800px, 100%); height: auto;
+    justify-content: center;
+    align-items: center;
     box-sizing: border-box;
     padding: 10px 10px;
     border-radius: 35px;
-    margin: 0 auto;
+    margin: 20 auto;
     background: linear-gradient(
         45deg,
         rgb(7, 141, 112) 0%,
