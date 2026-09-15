@@ -11,8 +11,13 @@ body {
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.box1:hover, .box2:hover, .box3:hover, .box4:hover, .box5:hover, .recircle:hover, .foto:hover {
+.box1:hover, .box2:hover, .box3:hover, .box4:hover, .box5:hover, .recircle:hover {
     transform: translateY(-10px);
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+.foto:hover {
+    transform: translateY(-30px);
     box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.3);
 }
 
@@ -32,7 +37,7 @@ body {
     border-radius: 35px;
     margin: 0 auto;
     height: auto;
-    margin-bottom: 35px;
+    margin-bottom: 25px;
 }
 
 .box3{
@@ -95,6 +100,10 @@ a{
     border-radius: 35px;
     padding: 10px 20px;
     cursor: pointer;
+}
+
+#guessgame input, #guessgame button {
+    margin-top: 20px;
 }
 
 #guessgame input {
