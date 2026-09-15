@@ -1,5 +1,10 @@
+
+body {
+    background-color: rgb(200, 200, 200);
+}
+
 .box, .box1{
-    width: 800px;
+    width: min(800px, 100%);
     box-sizing: border-box;
     background-color: rgb(130, 60, 190);
     border-radius: 35px;
@@ -7,7 +12,7 @@
 }
 
 .box2{
-    width: 800px;
+    width: min(800px, 100%);
     background-color: rgb(31, 146, 195);
     box-sizing: border-box;
     padding: 10px 10px;
@@ -55,7 +60,7 @@
 }
 
 .box5{
-    width: 800px; height: auto;
+    width: min(800px, 100%); height: auto;
     background-color:rgb(70, 143, 109);
     margin: 0 auto; border-radius: 35px;
     box-sizing: border-box;
@@ -66,15 +71,20 @@ a{
     color: white;
 }
 
-#guessgame{
-    text-align: center;
-    margin: 80px auto;
+#guessgame button {
+    border: none;
+    border-radius: 35px;
+    padding: 10px 20px;
+    cursor: pointer;
 }
 
-#guessgame input{
-    width: 100px;
+#guessgame input {
+    border: none;
+    border-radius: 35px;
     padding: 10px;
-    cursor: pointer;
+    width: 100px;
+    box-sizing: border-box;
+    text-align: center;
 }
 
 #result{
@@ -84,15 +94,16 @@ a{
 }
 
 .recircle{
-    width: 800px; height: auto;
+    width: min(800px, 100%); height: auto;
     box-sizing: border-box;
     padding: 10px 10px;
     border-radius: 35px;
     margin: 0 auto;
     background: linear-gradient(
         45deg,
-        rgb(7, 141, 112),
-        rgb(255, 255, 255),
-        rgb(61, 26, 121)
+        rgb(7, 141, 112) 0%,
+        rgb(255, 255, 255) 35%,
+        rgb(255, 255, 255) 65%,
+        rgb(61, 26, 121) 100%
     );
 }

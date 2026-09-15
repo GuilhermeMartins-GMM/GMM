@@ -11,7 +11,7 @@
             "@type": "Person",
             "name": "Guilherme Martins de Magalhães",
             "alternativeName": "GMM",
-            "description": "Gold medalist in informatics(OBI), and multiple medalist in physics, chemistry, and mathematics.",
+            "description": "Gold medalist in informatics (OBI), and multiple medalist in physics, chemistry, and mathematics.",
             "image": "https://guilhermemm.com",
             "jobTitle": [
                 "Competitive Programmer",
@@ -50,7 +50,7 @@
             <div class="box1" id="text1">
             <p>I'm a gold medalist in informatics <a href="https://olimpiada.ic.unicamp.br/passadas/OBI2025/qmerito/i2/" target="_blank">(OBI)</a>, and medalist in physics, chemistry and math
                 (2 times silver and bronze once in OBF, silver in OBQJr, silver in OBMEP) . Now, more
-                then just to olympiads, I'm programming for fun.</p>
+                than just to olympiads, I'm programming for fun.</p>
             </div>
             
         </section>
@@ -67,7 +67,7 @@
                 <p>After you start, you'll need to practice problems and make a site (this is the best
                 way to master programming). To the problems, I have a recommendation: <a href="https://neps.academy" target="_blank">Neps Academy</a>.</p>
                 <p>If you are interested in general science, I really recommend doing
-                the Breakthrough Junior Challenge, it's an anual competition, and you can 
+                the Breakthrough Junior Challenge, it's an annual competition, and you can 
                 start preparing to next year's right now.</p>
             </div>
 
@@ -85,10 +85,10 @@
                 max="100"
                 placeholder="Your guess">
 
-            <button onclick="check()">Guess</button>
+            <button id="guessButton" onclick="check()">Guess</button>
             <p id="result"></p>
             <p id="attempts"></p>
-            <button onclick="newG()">New Game</button>
+            <button id="newGButton" onclick="newG()" style = "display: none;">New Game</button>
 
         </section>
 
@@ -103,6 +103,10 @@
                 document.getElementById("result").textContent = "";
                 document.getElementById("attempts").textContent = "";
                 document.getElementById("guess").value = "";
+
+                document.getElementById("newGameButton").style.display = "none";
+                document.getElementById("guessButton").style.display = "inline-block";
+                document.getElementById("guess").disabled = false;
             }
 
             function check(){
@@ -124,8 +128,17 @@
                 else{
                     document.getElementById("result").textContent = "Correct!!!";
                     document.getElementById("attempts").textContent = "Attempts: " + attempts;
+
+                    document.getElementById("guessButton").style.display = "none";
+                    document.getElementById("newGameButton").style.display = "inline-block";
+                    document.getElementById("guess").disabled = true;
                 }
             }
+
+            document.getElementById("guess").addEventListener("keydown", function(event){
+                if(event.key === "Enter"){
+                check();}
+                });
 
             newG();
 
