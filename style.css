@@ -62,8 +62,12 @@ body {
     text-align: center;
 }
 
+#text4 {
+    font-size: 21px;
+}
+
 #text{
-    font-size: 23px;
+    font-size: 21px;
 }
 
 #text1, #text2, #text5, #text6{
@@ -140,7 +144,7 @@ a{
 
 .box6{
     width: min(800px, 100%); height: auto;
-    background-color: rgb(61, 26, 121);
+    background-color: rgb(112, 52, 164);
     margin: 0 auto; border-radius: 35px;
     box-sizing: border-box;
     padding: 25px 15px;
