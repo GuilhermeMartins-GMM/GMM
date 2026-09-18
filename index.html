@@ -30,125 +30,190 @@
         }
     </script>
 </head>
-    <body>
 
-        <div class="box" id="text">
-            <h1>A pseudo-portfolio</h1>
+<body>
+
+    <div id="spotlight" class="spotlight"></div>
+
+    <header class="sidebar">
+        <div class="logo">
+            <a href="#home">GMM<span class="accent">.</span></a>
         </div>
 
-        <div class="box2" id="text2">
-            I'm Guilherme Martins de Magalhães (GMM), and this site is a project that
-            I made using HTML, CSS and Java Script to test my programming skills beyond just solving problems.
-            Try my other (and better) site <a href="https://guilhermemartins-gmm.github.io/GMM_Tab/" >🫯💥</a>.
-        </div>
+        <nav>
+            <a href="#about" class="nav-link">ABOUT</a>
+            <a href="#achievements" class="nav-link">ACHIEVEMENTS</a>
+            <a href="#work" class="nav-link">PROJECTS</a>
+        </nav>
+    </header>
 
-        <section id="guessgame" class="recircle">
+    <main>
 
-            <h2>Guess the Number</h2>
-            <p>The number is between 1 and 1000.</p>
-
-            <input
-                type="number"
-                id="guess"
-                min="1"
-                max="1000"
-                placeholder="Your guess">
-
-            <button id="guessButton" onclick="check()">Guess</button>
-            <p id="result"></p>
-            <p id="attempts"></p>
-            <button id="newGameButton" onclick="newG()" style = "display: none;">New Game</button>
-
+        <section id="home" class="hero">
+            <p class="accent"><strong> HELLO, MY NAME IS</strong></p>
+            <h1>Guilherme<br><span>Martins de Magalhães.</span></h1>
+            <h2>A competitive programmer and chemistry enthusiast.</h2>
+            <p class="desc">I'm testing my programming skills beyond just solving problems.</p>
         </section>
 
-        <script>
+        <section id="about" class="content-section">
+            <div class="section-title">
+                <h2>About Me</h2>
+            </div>
+            <div class="grid-2col">
+                <div>
+                    <p class="large-text">I'm Guilherme, also known as <span class="accent">GMM</span>.</p>
+                    <p>Since I was young, I have always liked product design, especially in 
+                        tech. I used to pay attention to the rounded edges of apps, text colors, 
+                        and visual layouts. However, my tech journey officially began with math 
+                        olympiads, which eventually led me to informatics (and chemistry). This 
+                        background is what shapes the way I approach technology.
+                    </p>
+                    <p> In my free time, you will 
+                        probably find me listening to music, watching series, or learning Japanese.
+                    </p>
+                </div>
+                <div class="side-info">
+                    <div><span class="accent sm-text">STATUS</span><strong>Learning</strong></div>
+                    <div><span class="accent sm-text">FOCUS</span><strong>Algorithms<br>Chemistry</strong></div>
+                    <div><span class="accent sm-text">MADE IN</span><strong>🇧🇷</strong></div>
+                </div>
+            </div>
+        </section>
 
-            let number;
-            let attempts;
+        <section id="achievements" class="content-section">
+            <div class="section-title">
+                <h2>Achievements</h2>
+            </div>
+            <div>
+                <div class="list-item">
+                    <span class="accent">2025</span>
+                    <div>
+                        <h3>OBI — Brazilian Olympiad in Informatics 🥇</h3>
+                        <p class="desc">C++ Data Structures</p>
+                    </div>
+                </div>
+                <div class="list-item">
+                    <span class="accent">2025</span>
+                    <div>
+                        <h3>OBQJr — Brazilian Junior Chemistry Olympiad 🥈</h3>
+                        <p class="desc">General Chemistry</p>
+                    </div>
+                </div>
+                <div class="list-item">
+                    <span class="accent">2024</span>
+                    <div>
+                        <h3>OBMEP — Brazilian Mathematical Olympiad 🥈</h3>
+                        <p class="desc">Logic and Combinatorics</p>
+                    </div>
+                </div>
+                <div class="list-item">
+                    <span class="accent">2023</span>
+                    <div>
+                        <h3>OBF — Brazilian Physics Olympiad 🥈</h3>
+                        <p class="desc">Theoretical and Experimental Physics</p>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-            function newG(){
-                number = Math.floor(Math.random()*1000)+1;
-                attempts=0;
-                document.getElementById("result").textContent = "";
-                document.getElementById("attempts").textContent = "";
-                document.getElementById("guess").value = "";
+        <section id="work" class="content-section">
+            <div class="section-title">
+                <h2>Projects</h2>
+            </div>
+            <div class="projects-container">
+                <a href="https://guilhermemartins-gmm.github.io/GMM_Tab/" target="_blank" class="project-card project-link">
+                <span class="accent">01</span>
+            <div>
+                <p class="accent sm-text">WEB</p>
+                <h3>GMM Tab</h3>
+                <p class="desc">Made to test my skills to stardance hack club.</p>
+                <div class="tags"><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
+            </div>
+                </a>
 
-                document.getElementById("newGameButton").style.display = "none";
-                document.getElementById("guessButton").style.display = "inline-block";
-                document.getElementById("guess").disabled = false;
+                <article id="guessgame" class="project-card">
+                    <span class="accent2">02</span>
+                    <div>
+                        <p class="accent2 sm-text">GAME</p>
+                        <h3>Guess the Number</h3>
+                        <p class="desc">The number is between <strong>1 and 1000</strong>.</p>
+                        <div class="tags"><span>JavaScript</span><span>Logic</span><span>HardWork</span></div>
+                        <div class="game-controls">
+                            <input type="number" id="guess" min="1" max="1000" placeholder="Your guess">
+                            <button id="guessButton" onclick="check()">Guess</button>
+                            <button id="newGameButton" onclick="newG()" style="display: none;">New Game</button>
+                        </div>
+                        <p id="result" class="accent game-res"></p>
+                        <p id="attempts" class="sm-text desc"></p>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <footer class="sm-text">
+            <div class="footer-links">
+                <a href="https://github.com/GuilhermeMartins-GMM" target="_blank"><strong>Git Hub</strong></a>
+                <a href="https://instagram.com/_gui_mm_/" target="_blank"><strong>Instagram</strong></a>
+            </div>
+        </footer>
+
+    </main>
+
+    <script>
+        var spotlight = document.getElementById('spotlight');
+        
+        window.onmousemove = function(e) {
+            spotlight.style.left = e.clientX + 'px';
+            spotlight.style.top = e.clientY + 'px';
+        };
+
+        var number;
+        var attempts;
+
+        function newG() {
+            number = Math.floor(Math.random() * 1000) + 1;
+            attempts = 0;
+            document.getElementById("result").textContent = "";
+            document.getElementById("attempts").textContent = "";
+            document.getElementById("guess").value = "";
+            document.getElementById("guess").disabled = false;
+            document.getElementById("guessButton").style.display = "inline-block";
+            document.getElementById("newGameButton").style.display = "none";
+        }
+
+        function check() {
+            var guess = Number(document.getElementById("guess").value);
+
+            if (guess < 1 || guess > 1000) {
+                document.getElementById("result").textContent = "Serious?";
+                return;
             }
 
-            function check(){
-                let guess = Number(document.getElementById("guess").value);
+            attempts = attempts + 1;
 
-                if(guess<1 || guess>1000){
-                    document.getElementById("result").textContent = "Between 1 and 100";
-                    return;
-                }
+            if (guess < number) {
+                document.getElementById("result").textContent = "Higher";
+            } else if (guess > number) {
+                document.getElementById("result").textContent = "Lower";
+            } else {
+                document.getElementById("result").textContent = "Correct!!!";
+                document.getElementById("attempts").textContent = "Attempts: " + attempts;
 
-                attempts++;
-
-                if(guess<number){
-                    document.getElementById("result").textContent = "Higher";
-                }
-                else if(guess>number){
-                    document.getElementById("result").textContent = "Lower";
-                }
-                else{
-                    document.getElementById("result").textContent = "Correct!!!";
-                    document.getElementById("attempts").textContent = "Attempts: " + attempts;
-
-                    document.getElementById("guessButton").style.display = "none";
-                    document.getElementById("newGameButton").style.display = "inline-block";
-                    document.getElementById("guess").disabled = true;
-                }
+                document.getElementById("guessButton").style.display = "none";
+                document.getElementById("newGameButton").style.display = "inline-block";
+                document.getElementById("guess").disabled = true;
             }
+        }
 
-            document.getElementById("guess").addEventListener("keydown", function(event){
-                if(event.key === "Enter"){
-                check();}
-                });
+        document.getElementById("guess").onkeydown = function(event) {
+            if (event.key === "Enter") {
+                check();
+            }
+        };
 
-            newG();
+        newG();
+    </script>
 
-        </script>
-
-        <section id="about">
-
-            <div class="box3" id="text3">
-            <h2>About Me</h2>
-            </div>
-
-            <div class="box1" id="text1">
-            <p>I'm a gold medalist in informatics <a href="https://olimpiada.ic.unicamp.br/passadas/OBI2025/qmerito/i2/" target="_blank">(OBI)</a>, and medalist in physics, chemistry and math
-                (2 times silver and bronze once in OBF, silver in OBQJr, silver in OBMEP) . Now, more
-                than just to olympiads, I'm programming for fun.</p>
-            </div>
-            
-        </section>
-
-        <section id="recommendations">
-
-            <div class="box4" id="text4">
-                <h2>My Recommendations</h2>
-            </div>
-
-            <div class="box5" id="text5">
-                <p>At least for programming, the start is the most difficult part. So, if you
-                want, one thing is a must:<a href="https://open.spotify.com/album/4lkJ6i3LDK8HvcU2tPWX9k" target="_blank"> </a>DO<a href="https://open.spotify.com/album/4lkJ6i3LDK8HvcU2tPWX9k" target="_blank"> </a>IT<a href="https://open.spotify.com/album/4lkJ6i3LDK8HvcU2tPWX9k" target="_blank">.</a> The continuation will come naturally</p>
-                <p>After you start, you'll need to practice problems and make a site (this is the best
-                way to master programming). To the problems, I have a recommendation: <a href="https://neps.academy" target="_blank">Neps Academy</a>.</p>
-                <p>If you are interested in general science, I really recommend doing
-                the <a href="https://breakthroughjuniorchallenge.org/" target="_blank">Breakthrough Junior Challenge</a>, it's an annual competition, and you can 
-                start preparing to next year's right now.</p>
-            </div>
-
-        </section>
-
-        <img src="foto.png" class="foto" alt="" style="display: block; margin: 80px auto; border:none; outline: none; box-shadow: none;"> 
-
-        <div class="box6" id="text6">
-            <a href="https://instagram.com/_gui_mm_/" target="_blank">More About Me</a>
-        </div>
-    </body>
+</body>
 </html>

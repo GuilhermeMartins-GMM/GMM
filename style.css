@@ -1,138 +1,61 @@
 
 body {
-    background-color: rgb(230, 230, 230);
-    font-family: Arial, sans-serif;
-    align-items: center;
-    justify-content: center;
-    overflow: x hidden;
+    background-color: rgb(250, 246, 255);
+    color: rgb(18, 5, 31);
 }
 
-.box1, .box2, .box3, .box4, .box5, .recircle, .foto, .box6 {
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+.logo a,
+.nav-link:hover,
+.hero h1,
+.section-title h2,
+.large-text,
+.list-item h3,
+.project-card h3 {
+    color: rgb(20, 8, 38);
 }
 
-.box1:hover, .box2:hover, .box3:hover, .box4:hover, .box5:hover, .recircle:hover, .box6:hover {
-    transform: translateY(-10px);
-    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.3);
+.desc,
+.nav-link,
+.hero h1 span,
+footer,
+.footer-links a,
+.link {
+    color: rgb(76, 82, 99);
 }
 
-.foto:hover {
-    transform: translateY(-30px);
-    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.3);
+.accent {
+    color: rgb(61, 26, 121);
 }
 
-.box, .box1{
-    width: min(800px, 100%);
-    box-sizing: border-box;
-    background-color: rgb(130, 60, 190);
-    border-radius: 35px;
-    margin: 0 auto;
+.accent2 {
+    color: rgb(61, 26, 121);
 }
 
-.box2{
-    width: min(800px, 100%);
-    background-color: rgb(31, 146, 195);
-    box-sizing: border-box;
-    padding: 10px 10px;
-    border-radius: 35px;
-    margin: 0 auto;
-    height: auto;
-    margin-bottom: 22px;
+.footer-links a:hover,
+.link:hover,
+.project-link:hover .link-arrow {
+    color: rgb(0, 115, 141);
 }
 
-.box3{
-    width: min(800px, 100%); height: auto;
-    background-color: rgb(70, 143, 109);
-    margin: 20px auto; border-radius: 40px;
-    box-sizing: border-box;
-    padding: 1px 15px;
+.spotlight {
+    background: radial-gradient(circle, rgba(67, 87, 112, 0.1) 0%, transparent 80%);
 }
 
-.box{
-    height: auto;
+.project-card {
+    background: rgba(229, 226, 234, 0.9);
+    border-color: rgba(170, 142, 205, 0.1);
 }
 
-.box1{
-    padding: 5px 10px;
-    height: auto;
+.project-card:hover {
+    border-color: rgba(210, 162, 255, 0.3);
 }
 
-#text, #text1, #text2, #text3, #text4, #text5, #text6{
-    color: rgb(250, 250, 250);
-    text-align: center;
+.tags span {
+    color: rgb(21, 6, 36);
+    background: rgba(115, 102, 130, 0.1);
 }
 
-#text4 {
-    font-size: 21px;
-}
-
-#text{
-    font-size: 21px;
-}
-
-#text1, #text2, #text5, #text6{
-    font-size: 20px;
-}
-
-.box4{
-    width: min(800px, 100%); height: auto;
-    background-color:rgb(31, 146, 195);
-    margin: 20px auto; border-radius: 40px;
-    box-sizing: border-box;
-    padding: 1px 15px;
-}
-
-.box5{
-    width: min(800px, 100%); height: auto;
-    background-color:rgb(70, 143, 109);
-    margin: 0 auto; border-radius: 35px;
-    box-sizing: border-box;
-    padding: 25px 15px;
-}
-
-a{
-    color: white;
-}
-
-#guessgame button, #guessgame input{
-    box-sizing: border-box;
-    height: auto;
-}
-
-#guessgame button {
-    border: none;
-    border-radius: 35px;
-    padding: 10px 20px;
-    cursor: pointer;
-}
-
-#guessgame input, #guessgame button {
-    margin-top: 20px;
-}
-
-#guessgame input {
-    border: none;
-    border-radius: 35px;
-    padding: 10px;
-    width: 100px;
-    box-sizing: border-box;
-    text-align: center;
-}
-
-#result{
-    font-size: 20px;
-    font-weight: bold;
-    min-height: 25px;
-}
-
-.recircle{
-    width: min(800px, 100%); height: auto;
-    box-sizing: border-box;
-    padding: 10px 10px;
-    display: block;
-    border-radius: 35px;
-    text-align: center;
-    margin: 0 auto;
+#guessgame {
     background: linear-gradient(
         45deg,
         rgb(7, 141, 112) 0%,
@@ -142,10 +65,284 @@ a{
     );
 }
 
-.box6{
-    width: min(800px, 100%); height: auto;
-    background-color: rgb(112, 52, 164);
-    margin: 0 auto; border-radius: 35px;
+#guessgame h3, 
+#guessgame p.desc,
+#guessgame .tags span,
+#guessgame input {
+    color: rgb(10, 25, 47);
+}
+
+#guessgame .tags span {
+    background: rgba(10, 25, 47, 0.12);
+}
+
+#guessgame input {
+    background-color: rgb(255, 255, 255);
+}
+
+#guessgame button {
+    background-color: rgb(61, 26, 121);
+    color: rgb(233, 201, 255);
+}
+
+* {
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
-    padding: 25px 15px;
+    font-family: arial;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    line-height: 1.6;
+    overflow-x: hidden;
+}
+
+.sm-text {
+    font-size: 18px;
+}
+
+.spotlight {
+    position: fixed;
+    width: 500px;
+    height: 500px;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+    z-index: 0;
+}
+
+.sidebar {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 320px;
+    height: 100vh;
+    padding: 60px 0 60px 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    z-index: 100;
+}
+
+.logo {
+    position: absolute;
+    top: 60px;
+    left: 60px;
+}
+
+.logo a {
+    text-decoration: none;
+    font-size: 35px;
+    font-weight: 700;
+}
+
+.sidebar nav {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.nav-link {
+    display: inline-block;
+    text-decoration: none;
+    font-size: 11px;
+    font-weight: 500;
+    letter-spacing: 1.5px;
+    transition: 0.25s;
+}
+
+.nav-link:hover {
+    transform: translateY(-2px);
+}
+
+main {
+    margin-left: 320px;
+    max-width: 1100px;
+    padding: 0 60px 0 120px;
+    position: relative;
+    z-index: 1;
+}
+
+.hero {
+    display: flex;
+    flex-direction: column;
+    padding-top: 230px;
+    padding-bottom: 130px;
+}
+
+.hero h1 {
+    font-size: 60px;
+    line-height: 1.1;
+    margin: 10px 0 15px;
+}
+
+.hero h2 {
+    font-size: 22px;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+
+.hero .desc {
+    max-width: 500px;
+}
+
+.content-section {
+    padding: 50px 0;
+}
+
+.section-title {
+    margin-bottom: 20px;
+}
+
+.section-title h2 {
+    font-size: 26px;
+}
+
+.grid-2col {
+    display: grid;
+    grid-template-columns: 1fr 240px;
+    gap: 50px;
+}
+
+.large-text {
+    font-size: 19px;
+    margin-bottom: 22px;
+}
+
+.side-info {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.side-info div {
+    display: flex;
+    flex-direction: column;
+}
+
+.list-item {
+    display: grid;
+    grid-template-columns: 80px 1fr;
+    gap: 20px;
+    padding: 15px 0;
+}
+
+.list-item h3 {
+    font-size: 17px;
+}
+
+.projects-container {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.project-card {
+    display: grid;
+    grid-template-columns: 50px 1fr;
+    gap: 15px;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 35px;
+    padding: 30px;
+    transition: 0.3s;
+}
+
+.project-card:hover {
+    transform: translateY(-8px);
+}
+
+.project-card h3 {
+    font-size: 22px;
+    margin: 5px 0 10px;
+}
+
+.tags {
+    display: flex;
+    gap: 8px;
+    margin: 18px 0;
+}
+
+.tags span {
+    padding: 4px 8px;
+    font-size: 12px;
+    border-radius: 25px;
+}
+
+#guessgame {
+    border-radius: 35px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#guessgame:hover {
+    transform: translateY(-10px);
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+.game-controls {
+    display: flex;
+    gap: 10px;
+    margin-top: 15px;
+}
+
+#guessgame input {
+    border: none;
+    border-radius: 35px;
+    padding: 10px;
+    width: 120px;
+    text-align: center;
+}
+
+#guessgame button {
+    border: none;
+    border-radius: 35px;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+#result {
+    font-size: 20px;
+    font-weight: bold;
+    min-height: 25px;
+    margin-top: 10px;
+}
+
+footer {
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    padding: 50px 0;
+}
+
+.footer-links {
+    display: flex;
+    gap: 18px;
+}
+
+.footer-links a, .link {
+    text-decoration: none;
+    transition: 0.25s;
+}
+
+.project-link {
+    display: grid;
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
+}
+
+.project-link:visited {
+    color: inherit;
+    text-decoration: none;
+}
+
+.project-link h3,
+.project-link p,
+.project-link span {
+    text-decoration: none;
 }
